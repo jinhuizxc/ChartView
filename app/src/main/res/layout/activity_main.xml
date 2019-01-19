@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <com.jh.chartview.view.MyChartView
-        android:id="@+id/columnView"
-        android:layout_width="600dp"
-        android:layout_height="wrap_content"
-        app:graphTitle="Android柱形图~"
-        app:axisTextSize="20sp"
-        app:X_AxisName="X轴"
-        app:Y_AxisName ="Y轴"/>
-</RelativeLayout>
+    <Button
+        android:id="@+id/btn_chart"
+        android:text="Android柱形图"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_mp_chart"
+        android:text="MPAndroidChart饼状图"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
